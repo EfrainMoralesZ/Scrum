@@ -1,0 +1,212 @@
+{
+  "sprints": [
+    {
+      "id": "Sprint 1 - Configuración Base",
+      "tareas": [
+        {
+          "titulo": "Crear interfaz de usuario base",
+          "descripcion": "Diseñar la estructura principal de la aplicación con customtkinter, incluyendo navegación y paleta de colores (amarillo y gris oscuro)",
+          "tiempo_estimado_dias": 1,
+          "estado": "Completado",
+          "asignado_a": "Equipo Dev",
+          "fecha_inicio": "2025-06-01",
+          "fecha_fin": "2025-06-03"
+        },
+        {
+          "titulo": "Implementar sistema de autenticación",
+          "descripcion": "Crear login manager con validación de usuarios desde JSON (usuarios.json)",
+          "tiempo_estimado_dias": 1,
+          "estado": "Completado",
+          "asignado_a": "Backend",
+          "fecha_inicio": "2025-06-04",
+          "fecha_fin": "2025-06-05"
+        },
+        {
+          "titulo": "Configurar base de datos de usuarios",
+          "descripcion": "Setup inicial de usuarios.json con roles (ejecutivo, admin) y permisos",
+          "tiempo_estimado_dias": 1,
+          "estado": "Completado",
+          "asignado_a": "DBA",
+          "fecha_inicio": "2025-06-01",
+          "fecha_fin": "2025-06-01"
+        }
+      ]
+    },
+    {
+      "id": "Sprint 2 - Módulo de Etiquetado",
+      "tareas": [
+        {
+          "titulo": "Generar las etiquetas",
+          "descripcion": "Implementar PDFLabelBuilder para generar etiquetas en un cuadro de diálogo con la informacion que debe de llevar la etiqueta.",
+          "tiempo_estimado_dias": 1,
+          "estado": "Completado",
+          "asignado_a": "Dev Frontend",
+          "fecha_inicio": "2025-06-06",
+          "fecha_fin": "2025-06-08"
+        },
+        {
+          "titulo": "Crear plantilla PDF para etiquetas",
+          "descripcion": "Diseñar plantilla de etiqueta usando ReportLab con datos de productos (MOS)",
+          "tiempo_estimado_dias": 1,
+          "estado": "Completado",
+          "asignado_a": "Template Designer",
+          "fecha_inicio": "2025-06-09",
+          "fecha_fin": "2025-06-10"
+        },
+        {
+          "titulo": "Generar etiquetas en formato PNG",
+          "descripcion": "Convertir etiquetas PDF a PNG con PIL/Pillow para visualización en aplicación",
+          "tiempo_estimado_dias": 1,
+          "estado": "Completado",
+          "asignado_a": "Dev Backend",
+          "fecha_inicio": "2025-06-11",
+          "fecha_fin": "2025-06-12"
+        },
+        {
+          "titulo": "Integrar campos dinámicos en etiquetas",
+          "descripcion": "Permitir personalización de etiquetas según datos del producto y norma aplicable",
+          "tiempo_estimado_dias": 1,
+          "estado": "Completado",
+          "asignado_a": "Dev Full",
+          "fecha_inicio": "2025-06-13",
+          "fecha_fin": null
+        }
+      ]
+    },
+    {
+      "id": "Sprint 3 - Dashboard y Visualización",
+      "tareas": [
+        {
+          "titulo": "Crear dashboard principal",
+          "descripcion": "Implementar DashboardService con métricas de etiquetas: por norma, por país, por tipo",
+          "tiempo_estimado_dias": 1,
+          "estado": "Completado",
+          "asignado_a": "Data Viz",
+          "fecha_inicio": "2025-06-14",
+          "fecha_fin": "2025-06-15"
+        },
+        {
+          "titulo": "Agregar gráficos de crecimiento",
+          "descripcion": "Implementar gráficos semanales y mensuales de etiquetas generadas",
+          "tiempo_estimado_dias": 1,
+          "estado": "Completado",
+          "asignado_a": "Charts Dev",
+          "fecha_inicio": "2025-06-16",
+          "fecha_fin": "2025-06-17"
+        },
+        {
+          "titulo": "Mostrar métricas por norma",
+          "descripcion": "Gráficos de distribución por NOM-004, NOM-015, NOM-020, NOM-024, NOM-050, NOM-141, NOM-189",
+          "tiempo_estimado_dias": 1,
+          "estado": "En Progreso",
+          "asignado_a": "Analytics",
+          "fecha_inicio": "2025-06-18",
+          "fecha_fin": null
+        },
+        {
+          "titulo": "Historial de etiquetas generadas",
+          "descripcion": "Tabla del historial con BD-MOS.json mostrando todas las etiquetas creadas",
+          "tiempo_estimado_dias": 1,
+          "estado": "Completado",
+          "asignado_a": "Dev DB",
+          "fecha_inicio": "2025-06-19",
+          "fecha_fin": "2025-06-19"
+        }
+      ]
+    },
+    {
+      "id": "Sprint 4 - Configuración y Administración",
+      "tareas": [
+        {
+          "titulo": "Mejorar UI de inicio de sesión",
+          "descripcion": "Refactorizar login con validación mejorada y mensajes de error claros",
+          "tiempo_estimado_dias": 1,
+          "estado": "Completado",
+          "asignado_a": "UI Designer",
+          "fecha_inicio": "2025-06-20",
+          "fecha_fin": "2025-06-20"
+        },
+        {
+          "titulo": "Crear módulo de configuración",
+          "descripcion": "Implementar UserConfigService para gestionar config_etiquetas.json",
+          "tiempo_estimado_dias": 1,
+          "estado": "Completado",
+          "asignado_a": "Config Dev",
+          "fecha_inicio": "2025-06-21",
+          "fecha_fin": null
+        },
+        {
+          "titulo": "Agregar formularios dinámicos por norma",
+          "descripcion": "Crear formularios JSON para NOM-004, NOM-015, NOM-020, NOM-024, NOM-050, NOM-141, NOM-189",
+          "tiempo_estimado_dias": 4,
+          "estado": "En Progreso",
+          "asignado_a": "Forms Dev",
+          "fecha_inicio": "2025-06-22",
+          "fecha_fin": null
+        },
+        {
+          "titulo": "Gestión de roles y permisos",
+          "descripcion": "Implementar control de acceso entre ejecutivo y admin",
+          "tiempo_estimado_dias": 1,
+          "estado": "Completado",
+          "asignado_a": "Security",
+          "fecha_inicio": "2025-06-23",
+          "fecha_fin": "2025-06-23"
+        }
+      ]
+    },
+    {
+      "id": "Sprint 5 - Testing y Producción",
+      "tareas": [
+        {
+          "titulo": "Testing de etiquetado",
+          "descripcion": "Validar generación de etiquetas en PDF y PNG con diferentes normas",
+          "tiempo_estimado_dias": 5,
+          "estado": "No Iniciado",
+          "asignado_a": "QA",
+          "fecha_inicio": "2025-06-24",
+          "fecha_fin": null
+        },
+        {
+          "titulo": "Testing del dashboard",
+          "descripcion": "Verificar que gráficos se renderizan correctamente con datos reales",
+          "tiempo_estimado_dias": 5,
+          "estado": "No Iniciado",
+          "asignado_a": "QA",
+          "fecha_inicio": null,
+          "fecha_fin": null
+        },
+        {
+          "titulo": "Compilar a ejecutable (.exe)",
+          "descripcion": "Usar PyInstaller para compilación final de aplicación",
+          "tiempo_estimado_dias": 5,
+          "estado": "No Iniciado",
+          "asignado_a": "DevOps",
+          "fecha_inicio": null,
+          "fecha_fin": null
+        },
+        {
+          "titulo": "Pruebas de rendimiento",
+          "descripcion": "Optimizar rendimiento con archivos JSON grandes y muchas etiquetas",
+          "tiempo_estimado_dias": 5,
+          "estado": "No Iniciado",
+          "asignado_a": "Performance",
+          "fecha_inicio": null,
+          "fecha_fin": null
+        },
+        {
+          "titulo": "Documentación final",
+          "descripcion": "Crear README completo con instrucciones de instalación y uso",
+          "tiempo_estimado_dias": 5,
+          "estado": "No Iniciado",
+          "asignado_a": "Docs",
+          "fecha_inicio": null,
+          "fecha_fin": null
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "grouped_mode": true
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "projects": [
+    {
+      "name": "Bases de etiquetado Multibrand",
+      "description": "El proposito de esta tarea es evitar un desbordamiento y que haya datos duplicados dentro de la base. asi como ayudar al ejecutivo en campo a realizar las etiquetas y los documentos que se mandan a maquila",
+      "created_at": "2026-03-03T12:08:22.949865",
+      "last_modified": "2026-03-03T12:08:22.949865",
+      "scrum_file": "projects\\Bases de etiquetado Multibrand\\scrum_board.json"
+    }
+  ],
+  "last_opened": "Bases de etiquetado Multibrand"
+}
